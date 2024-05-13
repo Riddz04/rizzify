@@ -63,21 +63,26 @@ const makeAllPlays = ()=>{
     })
 }
 
-Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
-    element.addEventListener('click',(e)=>{
-        makeAllPlays();
-        index = parseInt(e.target.id);
-        e.target.classList.remove('fa-circle-play');
-        e.target.classList.add('fa-circle-pause');
-        audioElement.src = `songs/${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
-        audioElement.currentTime = 0;
-        audioElement.play();
-        gif.style.opacity = 1;
-        masterPlay.classList.remove('fa-circle-play');
-        masterPlay.classList.add('fa-circle-pause');
-    })
-})
+Array.from(document.getElementsByClassName("songItemPlay")).forEach((element, i) => {
+    element.addEventListener('click', () => {
+      makeAllPlays();
+      songIndex = i; // Update the songIndex based on the clicked song item
+      updateSongInfo();
+      audioElement.play();
+      gif.style.opacity = 1;
+      masterPlay.classList.remove('fa-circle-play');
+      masterPlay.classList.add('fa-circle-pause');
+    });
+  });
+  
+  function updateSongInfo() {
+    const { songName, filePath } = songs[songIndex];
+    masterSongName.innerText = songName;
+    audioElement.src = filePath;
+    audioElement.currentTime = 0;
+    const coverImg = document.querySelectorAll('.songItem img')[songIndex];
+    coverImg.src = songs[songIndex].coverPath;
+  }
 document.getElementById('next').addEventListener('click',()=>{
     if(songIndex>=9){
         songIndex = 0;
