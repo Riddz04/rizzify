@@ -8,16 +8,16 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs = [
-    {songName : "Sajni - Arijit Singh", filePath : "songs/1.mp3", coverPath : "covers/1.jpg"},
-    {songName : "Ik kudi - Arpit Bala & wolf.cryman ", filePath : "songs/2.mp3", coverPath : "covers/2.png"},
-    {songName : "Zulfan -SARRB | Starboy X", filePath : "songs/3.mp3", coverPath : "covers/3.png"},
-    {songName : "Double Take - Dhruv", filePath : "songs/4.mp3", coverPath : "covers/4.png"},
-    {songName : "Ishq Mitaye - Mohit Chauhan", filePath : "songs/5.mp3", coverPath : "covers/5.png"},
-    {songName : "Sahiba - Aditya RIkhari", filePath : "songs/6.mp3", coverPath : "covers/6.png"},
-    {songName : "Nindaraan Diyaan - Amit Trivedi", filePath : "songs/7.mp3", coverPath : "covers/7.png"},
-    {songName : "Kamikaze - Nanku, Faizan", filePath : "songs/8.mp3", coverPath : "covers/8.png"},
-    {songName : "Jaguar - Sukh E Muzical Doctorz", filePath : "songs/9.mp3", coverPath : "covers/9.png"},
-    {songName : "Gone Gone Gone - Philip Philip", filePath : "songs/10.mp3", coverPath : "covers/10.png"}
+    {songName : "Sajni", filePath : "songs/1.mp3", coverPath : "covers/1.jpg"},
+    {songName : "Ik kudi", filePath : "songs/2.mp3", coverPath : "covers/2.png"},
+    {songName : "Zulfan", filePath : "songs/3.mp3", coverPath : "covers/3.png"},
+    {songName : "Double Take", filePath : "songs/4.mp3", coverPath : "covers/4.png"},
+    {songName : "Ishq Mitaye ", filePath : "songs/5.mp3", coverPath : "covers/5.png"},
+    {songName : "Sahiba", filePath : "songs/6.mp3", coverPath : "covers/6.png"},
+    {songName : "Nindaraan Diyaan", filePath : "songs/7.mp3", coverPath : "covers/7.png"},
+    {songName : "Kamikaze", filePath : "songs/8.mp3", coverPath : "covers/8.png"},
+    {songName : "Jaguar", filePath : "songs/9.mp3", coverPath : "covers/9.png"},
+    {songName : "Gone Gone Gone ", filePath : "songs/10.mp3", coverPath : "covers/10.png"}
 ]
 
 songItems.forEach((element, i)=>{
