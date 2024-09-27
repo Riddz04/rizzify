@@ -1,6 +1,6 @@
 Welcome to Rizzify!
 
-This is a simple website I created for personal use and as a practice project to improve my web development skills. The website is hosted on GitHub Pages and can be accessed here.
+This is a simple website I created for personal use and as a practice project to improve my web development skills. The website is hosted on GitHub Pages and can be accessed here-> https://riddz04.github.io/rizzify/
 
 Features:
 
